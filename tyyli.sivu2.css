@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: 100vh;
+    margin: 0;
+    background-color: #fffefe; 
+    margin-left: 100px;
+    position: relative;
+}
+
+.navigaatio {
+    background-color: transparent; 
+    padding: 10px; 
+    width: 93%; 
+    margin-bottom: 0; 
+    margin-top: 50px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.navigaatio a {
+    color: #000000; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 24px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.navigaatio a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: #333; 
+}
+
+.oikea-ruutu {
+    padding: 20px; 
+    background-color: #fff; 
+    border: 2px solid #000000; 
+    border-radius: 5px; 
+    width: 600px; 
+    height: 465px; 
+    position: absolute; 
+    left: 50px; 
+    top: 174px; 
+    font-size: 18px; 
+}
+
+.oikea-ruutu h2 {
+    font-size: 28px; 
+}
+
+.kuva-container {
+    position: absolute;
+    right: 165px; 
+    top: 174px;
+}
+
+.kuva-elementti {
+    margin-bottom: 20px; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.kuva1 .kuva,
+.kuva2 .kuva {
+    width: 470px; 
+    height: auto; 
+    max-height: 241px; 
+    object-fit: cover; 
+    margin: 0; 
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1); 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.viiva {
+    width: 93%; 
+    height: 2px; 
+    background-color: #000000; 
+    margin: 1px 0; 
+    animation: grow 2.5s ease forwards; 
+    transform-origin: center; 
+}
